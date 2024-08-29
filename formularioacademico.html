@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+    <link rel="stylesheet" href="css/formularios.css">
+</head>
+<body>
+   <h1>Formulario academico</h1> 
+   
+   <form action="" method="post">
+    <fieldset>
+        <legend>DATOS PERSONALES</legend>
+        <p><label for="nom">Nombre:</label>
+        <input type="text" name="nom" id="nom" required>
+    </p>
+    <p><label for="ape1">Primer apellido:</label>
+        <input type="text" name="ape1" id="ape1">
+    </p>
+    <p><label for="ape2">segundo apellido:</label>
+        <input type="text" name="ape2" id="ape2">
+    </p>
+    <p><label for="fnac">fecha de nacimiento:</label>
+        <input type="date" name="fnac" id="fnac">
+    </p>
+    Sexo:
+    <p><label for="m">hombre:</label>
+        <input type="radio" name="Sexo" id="m">
+    </p>
+    <p><label for="f">mujer:</label>
+        <input type="radio" name="Sexo" id="f">
+     </p>
+     Grupo sanguineo:
+     <p>
+        <input type="radio" name="grupo" id="a"><label for="a">A</label><br>
+        <input type="radio" name="grupo" id="b"><label for="b">B</label><br>
+        <input type="radio" name="grupo" id="ab"><label for="o">AB</label><br>
+        <input type="radio" name="grupo" id="o" checked="true"> <label for="o">O</label><br>  
+     </p>
+     <P>
+        <label for="pais">Pais de nacimiento</label><br>
+        <select name="pais" id="pais">
+            <optgroup label="SUR AMERICA">
+            <option value="Peru">Peru</option>
+            <option value="venezuela">venezuela</option>
+            <option value="argentina">argentina</option>
+            <option value="chile">chile</option>
+            </optgroup>
+            <optgroup label="EUROPA">
+            <option value="inglaterra">inglaterra</option>
+            <option value="francia">francia</option>
+            <option value="italia">italia</option>
+            </optgroup>
+            <optgroup label="ASIA">
+            <option value="china">china</option>
+            <option value="japon">japon</option>
+            </optgroup>
+        </select>
+     </P>
+     <P>
+        <label for="email">correo electronico:</label>
+        <input type="email" name="email" id="email">
+     </P>
+     <p>
+        <label for="movil">numero celular:</label>
+        <input type="tel" name="movil" id="movil">
+     </p>
+     <p>
+        <label for="edad">edad:</label>
+        <input type="number" name="edad" id="edad" min="0" max="110">
+     </p>
+    </fieldset>
+    <fieldset>
+        <legend>DATOS ACADEMICOS</legend>
+        <P>
+            <label for="color">color favorito:</label>
+            <input type="color" name="color" id="color">
+        </P>
+        <P>
+            <label for="nota">Nota Aprobatoria:</label>
+            <input type="range" min="13" max="20" name="nota" id="nota">
+        </P>
+        <p>
+             ¿que campos te intresa?<br>
+            <input type="checkbox"name="ia" id="ia">
+            <label for="ia">Inteligencia artificial</label><br>
+            <input type="checkbox"name="cd" id="cd">
+            <label for="cd">Ciencia de datos</label><br>
+            <input type="checkbox"name="rb" id="rb">
+            <label for="rb">Robotica</label><br>
+            <input type="checkbox"name="vj" id="vj">
+            <label for="vj">Video Juegos</label><br>
+        </p>
+    </fieldset>
+     <p><input type="submit"></p>
+   </form>
+</body>
+</html>
